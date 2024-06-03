@@ -1,5 +1,20 @@
 body{
     margin: 0px;
+    font-family: 'Rufina', serif;
+}
+
+#home{
+    background: 
+    linear-gradient(
+        rgba(42,45,84,.60),     
+      rgba(42,45,84,.60)
+    ),  
+    url(../images/welcome-hero/welcome-banner.jpg);
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 102vh;
 }
 
 .navbar-container{
@@ -19,6 +34,211 @@ body{
     text-align: center;
 }
 
+.div1 a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .div2{
     width: 70%;
+}
+
+.div2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.home-heading{
+    border: 2px red dashed;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;   
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.home-heading div{
+    border: 2px red dashed;
+}
+
+
+.filter-container {
+    border: 2px red dashed;
+    width: 78%;
+    height: 18em;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin:auto;
+}
+
+.filter-container div{
+    border: 2px red dashed;
+}
+
+.filter-inner-container1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-inner-container1 div{
+    width: 100%;
+    height: 100%;
+}
+
+.filter-inner-container2{
+    width: 30%;
+}
+
+#service {
+    padding-top: 10%;
+}
+.service-container{
+    border: 2px red dashed;
+    display: flex;
+    width: 78%;
+    margin: auto;
+    margin-top: 8%;
+    gap: 2.8%;
+    margin-bottom: 8%;
+}
+
+.service-container div{
+    border: 2px red dashed;
+    width: 100%;
+    height: 57vh;
+}
+
+#new-cars{
+    background-color: #F8F9FB;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}   
+
+.new-car-container{
+    border: 2px red dashed;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-car-container div{
+    border: 2px red dashed;
+}
+
+.car-heading{
+    height: 16vh;
+}
+
+.car-content{
+    height: 66vh;
+}
+
+.car-owl-button{
+    height: 12px;
+}
+
+#featured-cars{
+    padding-top: 8%;
+    padding-bottom: 8%;  
+}
+
+.featured-cars-container{
+    border: 2px red dashed;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+
+.featured-cars-container div{
+    border: 2px red dashed;
+}
+
+.f-car-heading{
+    height: 16vh;
+}
+
+.f-car-content{
+    height: 671px;
+}
+
+#customer{
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-color: #F8F9FB;
+}
+
+.customer-container{
+    border: 2px red dashed;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-container div{
+    border: 2px red dashed;
+}
+
+.customers{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.customers div{
+    width: 33.33%;
+    height: 300px;
+}
+
+#brands{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+.brands-slider-container{
+    width: 78%;
+    border: 2px red dashed;
+    margin: auto;
+    height: 120px;
+}
+
+#footer{
+    background-color: #2A2D54;
+    padding-top: 8%;
+}
+
+.footer-container{
+    border: 2px red dashed;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content{
+    border: 2px red dashed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.footer-content div{
+    border: 2px red dashed;
+    width: 20%;
+    height: 70px;    
+}
+
+.footer-things{
+    border: 2px red dashed;
+    height: 20px;
 }
