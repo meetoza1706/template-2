@@ -16,6 +16,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
 <body>
@@ -155,7 +161,7 @@
         <h2 class="car-h">Newest Cars</h2>
       </div>
       <div class="car-content">
-        <div class="slide">
+        <div class="slide w3-container w3-center w3-animate-right">
           <div class="slide-container">
             <div class="car-img">
               <img src="assets\images\new-cars-model\ncm1.png" alt="camero" />
@@ -176,7 +182,7 @@
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide w3-container w3-center w3-animate-right">
           <div class="slide-container">
             <div class="car-img">
               <img src="assets\images\new-cars-model\ncm3.png" alt="camero" />
@@ -197,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide w3-container w3-center w3-animate-right">
           <div class="slide-container">
             <div class="car-img">
               <img src="assets\images\new-cars-model\ncm2.png" alt="camero" />
@@ -348,9 +354,9 @@
               <p>Automatic</p>
             </div>
             <h2 class="featured-heading1">Porsche 718 Cayman</h2>
-              <h3 class="featured-heading2">$48,500</h3>
-              <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                adipisci velit, sed quia non.</p>
+            <h3 class="featured-heading2">$48,500</h3>
+            <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+              adipisci velit, sed quia non.</p>
           </div>
           <div class="f1-3">
             <div class="content-frame">
@@ -393,17 +399,41 @@
       <div class="car-heading">
         <h2 class="car-h">What Our Clients Say</h2>
       </div>
-    <div class="customer-container">
-      <div class="f-car-heading"></div>
-      <div class="customers">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+      <div class="container">
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-box">
+            <div class="testimonial-img"><img src="assets/images/clients/c1.png" alt=""></div>
+            <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa
+              quae ab illo inventore verit.</p>
+            <h2>Thomas Lili</h2>
+            <h4>New York</h4>
+          </div>
+          <div class="testimonial-box">
+            <div class="testimonial-img"><img src="assets/images/clients/c2.png" alt=""></div>
+            <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa
+              quae ab illo inventore verit.</p>
+            <h2>Thomas Lili</h2>
+            <h4>New York</h4>
+          </div>
+          <div class="testimonial-box">
+            <div class="testimonial-img"><img src="assets/images/clients/c3.png" alt=""></div>
+            <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium dolor laudan rem aperiam, eaque ipsa
+              quae ab illo inventore verit.</p>
+            <h2>Thomas Lili</h2>
+            <h4>New York</h4>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
   <section id="brands">
-    <div class="brands-slider-container"></div>
+    <div class="owl-carousel brand-carousel" id="brand">
+        <div class="b-1"><img src="assets\images\brand\br1.png" alt=""></div>
+        <div class="b-2"><img src="assets\images\brand\br2.png" alt=""></div>
+        <div class="b-3"><img src="assets\images\brand\br3.png" alt=""></div>
+        <div class="b-4"><img src="assets\images\brand\br4.png" alt=""></div>
+        <div class="b-5"><img src="assets\images\brand\br5.png" alt=""></div>
+        <div class="b-6"><img src="assets\images\brand\br6.png" alt=""></div>
+    </div>
   </section>
   <footer id="footer">
     <div class="footer-container">
@@ -418,6 +448,65 @@
     </div>
   </footer>
 
+  <script>
+    var owl = $('.testimonial-carousel');
+    owl.owlCarousel({
+      items: 3,
+      margin: 10,
+
+      loop: true,
+      autoplay: true,
+      smartSpeed: 1000,
+      dots: false,
+      autoplayHoverPause: false,
+
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        640: {
+          items: 2
+        },
+        992: {
+          items: 3
+        }
+      }
+
+
+    });
+  </script>
+  <script>
+    var owl = $('.brand-carousel');
+    owl.owlCarousel({
+      items: 6,
+      margin: 0,
+      loop: true,
+      autoplay: false,
+      smartSpeed: 1000,
+      dots: false,
+      autoplayHoverPause: false,
+
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        640: {
+          items: 2
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
+  </script>
+
+
+  </script>
   <script src="assets\js\slider1.js"></script>
   <script src="assets\js\scroll.js"></script>
 </body>

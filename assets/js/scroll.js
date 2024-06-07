@@ -4,7 +4,7 @@ $(window).scroll(function(){
         document.getElementById('div2').style.paddingLeft = "9%";
         document.getElementById('navbar-container').style.background = "#000";
         document.getElementById('navbar-container').style.color = "#fff";
-        document.getElementById('navbar-container').style.zIndex = "1";
+        document.getElementById('navbar-container').style.zIndex = "99";
     }
     else {
         //console.log("normal");

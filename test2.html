@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="owl-carousel brand-carousel">
+          <div class="b-1"><img src="assets\images\brand\br1.png" alt=""></div>
+          <div class="b-2"><img src="assets\images\brand\br2.png" alt=""></div>
+          <div class="b-3"><img src="assets\images\brand\br3.png" alt=""></div>
+          <div class="b-4"><img src="assets\images\brand\br4.png" alt=""></div>
+          <div class="b-5"><img src="assets\images\brand\br5.png" alt=""></div>
+          <div class="b-6"><img src="assets\images\brand\br6.png" alt=""></div>
+        </div>
+      </div>
+    <script>
+        var owl = $('.brand-carousel'); // Corrected class selector
+        owl.owlCarousel({
+          items: 6,
+          margin: 0,
+          autoplay: true,
+          smartSpeed: 1000,
+          dots: false,
+          autoplayHoverPause: false,
+    
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            640: {
+              items: 2
+            },
+            992: {
+              items: 6
+            }
+          }
+        });
+    </script>
+</body>
+</html>
