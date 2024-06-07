@@ -1,214 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CarVilla</title>
-    <link rel="stylesheet" href="assets\css\style.css">
-    <link rel="stylesheet" href="assets\css\responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    
-</head>
-<body>
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <link rel="stylesheet" href="assets\css\responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
     <section id="home">
-        <div class="navbar-container" id="navbar-container">
-            <div class="div1" id="div1"><a href="index.html" class="logo">CARVILLA</a></div>
-            <div class="div2" id="div2">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#service">service</a></li>
-                    <li><a href="#featured-cars">featured cars</a></li>
-                    <li><a href="#new-cars">new cars</a></li>
-                    <li><a href="#brands">Brands</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+      <div class="navbar-container" id="navbar-container">
+        <div class="div1" id="div1">
+          <a href="index.html" class="logo">CARVILLA</a>
         </div>
-        <div class="navbar-container"style="visibility: hidden; position:sticky; top:0; left:0;" id="navbar-container">
-            <div class="div1" id="div1"><a href="index.html" class="logo">CARVILLA</a></div>
-            <div class="div2" id="div2">
-                <ul>
-                    <li>home</li>
-                    <li>service</li>
-                    <li>featured cars</li>
-                    <li>new cars</li>
-                    <li>Brands</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+        <div class="div2" id="div2">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#featured-cars">Featured Cars</a></li>
+            <li><a href="#new-cars">New Cars</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
         </div>
-        <div class="home-heading">
-            <div><h2>GET YOUR DESIRED CAR IN RESONABLE PRICE</h2></div>
-            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-            <div><button class="contact-us">Contact Us</button></div>
+      </div>
+      <div
+        class="navbar-container"
+        style="visibility: hidden; position: sticky; top: 0; left: 0"
+        id="navbar-container"
+      >
+        <div class="div1" id="div1">
+          <a href="index.html" class="logo">CARVILLA</a>
         </div>
-        <div class="filter-container">
-            <div class="filter-inner-container1">
-                <div>
-                    <h2>Select Year</h2>
-                    <select class="selection">
-                        <option value="default">Year</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                    </select>
-                    <h2>Body Style</h2>
-                    <select class="selection">
-                        <option value="default">Style</option>
-                        <option value="2018">Sedan</option>
-                        <option value="2017">Van</option>
-                        <option value="2016">Roadster</option>
-                    </select>   
-                </div>
-                <div>
-                    <h2>Select Year</h2>
-                    <select class="selection">
-                        <option value="default">Year</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                    </select>
-                    <h2>Body Style</h2>
-                    <select class="selection">
-                        <option value="default">Style</option>
-                        <option value="2018">Sedan</option>
-                        <option value="2017">Van</option>
-                        <option value="2016">Roadster</option>
-                    </select>  
-                </div>
-                <div>
-                    <h2>Select Year</h2>
-                    <select class="selection">
-                        <option value="default">Year</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                    </select>
-                    <h2>Body Style</h2>
-                    <select class="selection">
-                        <option value="default">Style</option>
-                        <option value="2018">Sedan</option>
-                        <option value="2017">Van</option>
-                        <option value="2016">Roadster</option>
-                    </select>  
-                </div>
-            </div>
-            <div class="filter-inner-container2">
-                <button class="search">Search</button>
-            </div>
+        <div class="div2" id="div2">
+          <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Featured Cars</li>
+            <li>New Cars</li>
+            <li>Brands</li>
+            <li>Contact</li>
+          </ul>
         </div>
+      </div>
+      <div class="home-heading">
+        <div><h2>GET YOUR DESIRED CAR AT A REASONABLE PRICE</h2></div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div><button class="contact-us">Contact Us</button></div>
+      </div>
+      <div class="filter-container">
+        <div class="filter-inner-container1">
+          <div>
+            <h2>Select Year</h2>
+            <select class="selection">
+              <option value="default">Year</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+            </select>
+            <h2>Body Style</h2>
+            <select class="selection">
+              <option value="default">Style</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Van">Van</option>
+              <option value="Roadster">Roadster</option>
+            </select>
+          </div>
+          <div>
+            <h2>Select Year</h2>
+            <select class="selection">
+              <option value="default">Year</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+            </select>
+            <h2>Body Style</h2>
+            <select class="selection">
+              <option value="default">Style</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Van">Van</option>
+              <option value="Roadster">Roadster</option>
+            </select>
+          </div>
+          <div>
+            <h2>Select Year</h2>
+            <select class="selection">
+              <option value="default">Year</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+            </select>
+            <h2>Body Style</h2>
+            <select class="selection">
+              <option value="default">Style</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Van">Van</option>
+              <option value="Roadster">Roadster</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-inner-container2">
+          <button class="search">Search</button>
+        </div>
+      </div>
     </section>
     <section id="service">
-        <div class="service-container">
-            <div class="s1">
-                <img src="assets\images\icons\car.png" height="15%" width="20%">
-                <h2 class="service-heading">Largest Dealership of Car</h2>
-                <p class="service-p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</p>
-            </div>
-            <div class="s2">
-                <img src="assets\images\icons\car-repair (1).png" height="15%" width="20%">
-                <h2 class="service-heading">Unlimited Repair Warrenty</h2>
-                <p class="service-p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</p>
-            </div>
-            <div class="s3">
-                <img src="assets\images\icons\car-insurance.png" height="15%" width="20%">
-                <h2 class="service-heading">Insurence Support</h2>
-                <p class="service-p">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.</p>
-            </div>
+      <div class="service-container">
+        <div class="s1">
+          <img src="assets\images\icons\car.png" height="15%" width="20%" />
+          <h2 class="service-heading">Largest Dealership of Cars</h2>
+          <p class="service-p">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            den fugit sed quia.
+          </p>
         </div>
+        <div class="s2">
+          <img
+            src="assets\images\icons\car-repair (1).png"
+            height="15%"
+            width="20%"
+          />
+          <h2 class="service-heading">Unlimited Repair Warranty</h2>
+          <p class="service-p">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            den fugit sed quia.
+          </p>
+        </div>
+        <div class="s3">
+          <img
+            src="assets\images\icons\car-insurance.png"
+            height="15%"
+            width="20%"
+          />
+          <h2 class="service-heading">Insurance Support</h2>
+          <p class="service-p">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            den fugit sed quia.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="new-cars">
-        <div class="new-car-container">
-            <div class="car-heading">
-                <p style="color: #818998; font-size: 16px; line-height: 1.8;">Checkout the Latest Cars</p>
-                <h2 class="car-h">Newest Cars</h2>
-            </div>
-            <div class="car-content">
-                <div class="slide">
-                    <div class="slide-container">
-                    <div class="car-img"><img src="assets\images\new-cars-model\ncm1.png" alt="camero"></div>
-                    <div class="car-details">
-                        <h2>Chevrolet Camaro ZA100</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <button class="viewBtn">View Details</button>
-                    </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-container">
-                    <div class="car-img"><img src="assets\images\new-cars-model\ncm3.png" alt="camero"></div>
-                    <div class="car-details">
-                        <h2>ferrari 488 superfast</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <button class="viewBtn">View Details</button>
-                    </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-container">
-                        <div class="car-img"><img src="assets\images\new-cars-model\ncm2.png" alt="camero"></div>
-                        <div class="car-details">
-                            <h2>BMW series-3 wagon</h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                            <button class="viewBtn">View Details</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="car-owl-button">
-                <div id="owl-1"></div>
-                <div id="owl-2"></div>
-                <div id="owl-3"></div>
-            </div>
+      <div class="new-car-container">
+        <div class="car-heading">
+          <p style="color: #818998; font-size: 16px; line-height: 1.8">
+            Checkout the Latest Cars
+          </p>
+          <h2 class="car-h">Newest Cars</h2>
         </div>
+        <div class="car-content">
+          <div class="slide">
+            <div class="slide-container">
+              <div class="car-img">
+                <img src="assets\images\new-cars-model\ncm1.png" alt="camero" />
+              </div>
+              <div class="car-details">
+                <h2>Chevrolet Camaro ZA100</h2>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Sed ut pers unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button class="viewBtn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-container">
+              <div class="car-img">
+                <img src="assets\images\new-cars-model\ncm3.png" alt="camero" />
+              </div>
+              <div class="car-details">
+                <h2>Ferrari 488 Superfast</h2>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Sed ut pers unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button class="viewBtn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-container">
+              <div class="car-img">
+                <img src="assets\images\new-cars-model\ncm2.png" alt="camero" />
+              </div>
+              <div class="car-details">
+                <h2>BMW Series-3 Wagon</h2>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                  Sed ut pers unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button class="viewBtn">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="car-owl-button">
+          <div id="owl-1"></div>
+          <div id="owl-2"></div>
+          <div id="owl-3"></div>
+        </div>
+      </div>
     </section>
     <section id="featured-cars">
-        <div class="featured-cars-container">
-            <div class="f-car-heading"><div class="new-car-container">
-                <div class="car-heading">
-                    <p style="color: #818998; font-size: 16px; line-height: 1.8;">Checkout the Featured Cars</p>
-                    <h2 class="car-h">Featured Cars</h2>
-                </div></div>
-            <div class="f-car-content">
-
+      <div class="featured-cars-container">
+        <div class="f-car-heading">
+          <div class="new-car-container">
+            <div class="car-heading">
+              <p style="color: #818998; font-size: 16px; line-height: 1.8">
+                Checkout the Featured Cars
+              </p>
+              <h2 class="car-h">Featured Cars</h2>
             </div>
+          </div>
         </div>
+        <div class="f-car-content">
+          <div class="inner-container1">
+            <div class="f-1">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc1.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Infiniti Z5</h2>
+              <h3 class="featured-heading2">$36,850</h3>
+              <p class="featured-p">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non.
+              </p>
+            </div>
+            <div class="f-2">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc2.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Chevrolet Camaro WMV20</h2>
+              <h3 class="featured-heading2">$66,575</h3>
+              <p class="featured-p">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non.
+              </p>
+            </div>
+            <div class="f-3">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc3.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Lamborghini V520</h2>
+              <h3 class="featured-heading2">$125,250</h3>
+              <p class="featured-p">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non.
+              </p>
+            </div>
+            <div class="f-4">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc4.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Audi A3 Sedan</h2>
+              <h3 class="featured-heading2">$95,500</h3>
+              <p class="featured-p">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non.
+              </p>
+            </div>
+          </div>
+          <div class="inner-container2">
+            <div class="f1-1">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc4.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Audi A3 Sedan</h2>
+              <h3 class="featured-heading2">$95,500</h3>
+              <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+            </div>
+            <div class="f1-2">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc4.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Audi A3 Sedan</h2>
+              <h3 class="featured-heading2">$95,500</h3>
+              <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+            </div>
+            <div class="f1-3">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc4.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Audi A3 Sedan</h2>
+              <h3 class="featured-heading2">$95,500</h3>
+              <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+            </div>
+            <div class="f1-4">
+              <div class="content-frame">
+                <div class="img-frame">
+                  <img src="assets\images\featured-cars\fc4.png" alt="car" />
+                </div>
+                <div class="featured-container">
+                  <p>Model: 2017</p>
+                  <p>3100 Mi</p>
+                  <p>240HP</p>
+                </div>
+                <p>Automatic</p>
+              </div>
+              <h2 class="featured-heading1">Audi A3 Sedan</h2>
+              <h3 class="featured-heading2">$95,500</h3>
+              <p class="featured-p">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.</p>
+            </div>
+          </div>
+          
     </section>
     <section id="customer">
-        <div class="customer-container">
-            <div class="f-car-heading"></div>
-            <div class="customers">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
+      <div class="customer-container">
+        <div class="f-car-heading"></div>
+        <div class="customers">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
         </div>
+      </div>
     </section>
     <section id="brands">
-        <div class="brands-slider-container"></div>
+      <div class="brands-slider-container"></div>
     </section>
     <footer id="footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                </div>
-                <div class="footer-things"></div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+        <div class="footer-things"></div>
+      </div>
     </footer>
 
     <script src="assets\js\slider1.js"></script>
-    <script src="assets\js\scroll.js"></script> 
-</body>
+    <script src="assets\js\scroll.js"></script>
+  </body>
 </html>
