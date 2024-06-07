@@ -405,22 +405,6 @@ body {
   width: 100%;
 }
 
-.f-1{
-  /* border: red 2px dashed; */
-}
-
-.f-2{
-  /* border: red 2px dashed; */
-}
-
-.f-3{
-  /* border: red 2px dashed; */
-}
-
-.f-4{
-  /* border: red 2px dashed; */
-}
-
 .inner-container2 {
   display: grid;
   width: 100%;
@@ -431,22 +415,6 @@ body {
 
 .inner-container2 div{
   width: 100%;
-}
-
-.f1-1{
-  border: 2px red dashed; 
-}
-
-.f1-2{
-  border: 2px red dashed; 
-}
-
-.f1-3{
-  border: 2px red dashed; 
-}
-
-.f1-4{
-  border: 2px red dashed; 
 }
 
 .content-frame{
