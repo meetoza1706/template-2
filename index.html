@@ -424,7 +424,8 @@
           </div>
         </div>
       </div>
-  </section>
+    </div>
+  </section>    
   <section id="brands">
     <div class="owl-carousel brand-carousel" id="brand">
       <div class="b-1"><img src="assets\images\brand\br1.png" alt=""></div>
@@ -502,36 +503,34 @@
 
 
   <script>
-    var owl = $('.testimonial-carousel');
-    owl.owlCarousel({
-      items: 3,
+    var testimonialOwl = $('.testimonial-carousel');
+    testimonialOwl.owlCarousel({
+      items: 1, // Default to 1 item
       margin: 10,
-
       loop: true,
       autoplay: true,
       smartSpeed: 1000,
       dots: false,
       autoplayHoverPause: false,
-
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1
+          items: 1 // Ensure only 1 item is shown for all screen sizes
         },
-        640: {
+        430: {
+          items: 1 // Ensure only 1 item is shown up to 430px width
+        },
+        768: {
           items: 2
         },
         992: {
           items: 3
         }
       }
-
-
     });
-  </script>
-  <script>
-    var owl = $('.brand-carousel');
-    owl.owlCarousel({
+  
+    var brandOwl = $('.brand-carousel');
+    brandOwl.owlCarousel({
       items: 6,
       margin: 0,
       loop: true,
@@ -539,25 +538,27 @@
       smartSpeed: 1000,
       dots: false,
       autoplayHoverPause: false,
-
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1
+          items: 1 // Ensure only 1 item is shown for all screen sizes
         },
         640: {
           items: 2
         },
-        992: {
+        768: {
           items: 3
         },
-        1200: {
+        1024: {
           items: 4
+        },
+        1200: {
+          items: 6
         }
       }
     });
   </script>
-
+  
   <script src="https://kit.fontawesome.com/a7ad42ee25.js" crossorigin="anonymous"></script>
   <script src="assets\js\slider1.js"></script>
   <script src="assets\js\scroll.js"></script>
