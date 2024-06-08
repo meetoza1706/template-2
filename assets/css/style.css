@@ -317,6 +317,7 @@ body {
 .car-details p {
   color: #89919f;
   margin-bottom: 4%;
+  text-align: start;
 }
 
 .car-details h2 {
@@ -324,12 +325,14 @@ body {
   font-weight: 500;
   margin-bottom: 26px;
   color: #444a57;
+  text-align: start;
 }
 
 .viewBtn {
   display: inline-block;
-  width: 12vw;
-  height: 20vh;
+  width: 44%;
+  padding-top: 4%;
+  padding-bottom: 4%;
   background: #4e4ffa;
   color: #fff;
   border-radius: 3px;
