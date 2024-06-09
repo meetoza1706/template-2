@@ -387,7 +387,7 @@ body {
 }
 
 #featured-cars {
-  padding-top: 20vh;
+  padding-top: 8%;
   padding-bottom: 8%;
 }
 
@@ -395,6 +395,10 @@ body {
   margin: auto;
   width: 78%;
   margin-top: 6%;
+}
+
+.f-car-content div{
+  margin-bottom: 1%;
 }
 
 .inner-container1 {
@@ -479,41 +483,108 @@ body {
   background-color: #f8f9fb;
 }
 
-/* Update CSS for responsiveness */
 .container {
-  max-width: 100%; /* Adjusted max-width for responsiveness */
+  max-width: 90%; /* Adjusted container width to 90% */
+  margin: 0 auto;
   padding: 0 15px;
-  margin-top: 5%; /* Adjusted margin-top for better alignment */
+}
+
+.testimonial-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .testimonial-box {
-  height: auto; /* Removed fixed height for responsiveness */
-  flex: 1 1 calc(33% - 20px); /* Adjusted flex property for better spacing */
-  max-width: calc(33% - 20px); /* Adjusted max-width for better spacing */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex: 1 1 300px;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
 }
 
 .testimonial-img img {
-  max-width: 100%; /* Ensure images resize proportionally */
-  max-height: 100%; /* Ensure images resize proportionally */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .testimonial-box p {
-  font-size: 14px; /* Reduced font size for better readability on smaller screens */
-  margin-top: 10px; /* Adjusted margin-top for better spacing */
-  margin-bottom: 10px; /* Adjusted margin-bottom for better spacing */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.testimonial-box h2,
+.testimonial-box h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .testimonial-box h4 {
-  font-size: 16px; /* Reduced font size for better readability on smaller screens */
-  margin-bottom: 5px; /* Adjusted margin-bottom for better spacing */
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  margin-top: -5px;
 }
 
-.testimonial-box h4 {
-  margin-top: 0; /* Removed negative margin-top for better alignment */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+ .testimonial-box {
+    flex: 1 1 250px;
+  }
 }
 
+@media (max-width: 992px) {
+ .testimonial-box {
+    flex: 1 1 200px;
+  }
+}
 
+@media (max-width: 768px) {
+ .testimonial-section {
+    flex-direction: column;
+  }
+
+ .testimonial-box {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+ .testimonial-box {
+    padding: 20px;
+  }
+
+ .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+ .testimonial-box p {
+    font-size: 14px;
+  }
+
+ .testimonial-box h2 {
+    font-size: 16px;
+  }
+
+ .testimonial-box h4 {
+    font-size: 12px;
+  }
+}
 #brands {
   padding: 12%;
 }
@@ -646,15 +717,25 @@ body {
   margin-top: 21%;
 }
 
-.subscribe {
-  color: #aeafc2;
-  font-size: 14px;
-  font-weight: 300;
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start; 
+  padding: 0 10px; 
+  box-sizing: border-box;
 }
 
-.email-f {
+.newsletter-email-wrapper {
+  display: flex;
+  align-items: start;
+  width: 100% !important;
+  max-width: 600px;
+  position: relative;
+  margin-top: 6%;
+}
+
+.newsletter-email-input {
   background: #26294d;
-  display: inline-block;
   padding: 10px 20px;
   outline: 0 !important;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -662,20 +743,28 @@ body {
   font-size: 12px;
   color: #666c81;
   font-weight: 300;
-  width: 98%;
-  margin-top: 6%;
+  width: 100%;
+  box-sizing: border-box; 
+  padding-right: 50px; 
 }
 
-.arrow {
-  color: white;
-}
-
-.a-btn {
+.newsletter-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
   background-color: transparent;
   outline: none;
   border: none;
-  margin-left: -12%;
+  padding: 0;
+  z-index: 2;
 }
+
+.newsletter-arrow {
+  color: white;
+}
+
+
 
 .footer-things {
   padding-top: 2%;

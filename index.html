@@ -56,6 +56,18 @@
         </ul>
       </div>
     </div>
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="menu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <div class="home-heading">
       <div>
         <h2>GET YOUR DESIRED CAR AT A REASONABLE PRICE</h2>
@@ -425,7 +437,7 @@
         </div>
       </div>
     </div>
-  </section>    
+  </section>
   <section id="brands">
     <div class="owl-carousel brand-carousel" id="brand">
       <div class="b-1"><img src="assets\images\brand\br1.png" alt=""></div>
@@ -457,7 +469,7 @@
         </div>
         <div>
           <div class="footer-sub-container">
-            <h2 class="footer-h2">TOP BRANDS</h2>
+            <h2 class="footer-h2 sub-h">TOP BRANDS</h2>
             <ul class="footer-ul sub1">
               <li>BMW</li>
               <li>Lamborghini</li>
@@ -476,16 +488,18 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="newsletter-container">
           <h2 class="footer-h2">NEWS LETTER</h2>
           <p class="footer-p subscribe">Subscribe to get latest news update and informations</p>
-          <input type="text" class="email-f" placeholder="Add Email">
-          <button class="a-btn"><i class="fa-sharp fa-solid fa-arrow-right arrow"></i></button>
+          <div class="newsletter-email-wrapper">
+            <input type="text" class="newsletter-email-input" placeholder="Add Email">
+            <button class="newsletter-btn"><i class="fa-sharp fa-solid fa-arrow-right newsletter-arrow"></i></button>
+          </div>
         </div>
       </div>
       <div class="footer-things">
         <div class="ft-sub-1">
-          <p class="footer-copy">© copyright.designed and developed by Meet Oza</p>
+          <p class="footer-copy">© copyright designed and developed by Meet Oza</p>
         </div>
         <div class="ft-sub-2">
           <ul class="ft-ul">
@@ -503,6 +517,14 @@
 
 
   <script>
+    function menu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
     var testimonialOwl = $('.testimonial-carousel');
     testimonialOwl.owlCarousel({
       items: 1, // Default to 1 item
@@ -528,7 +550,7 @@
         }
       }
     });
-  
+
     var brandOwl = $('.brand-carousel');
     brandOwl.owlCarousel({
       items: 6,
@@ -558,7 +580,7 @@
       }
     });
   </script>
-  
+
   <script src="https://kit.fontawesome.com/a7ad42ee25.js" crossorigin="anonymous"></script>
   <script src="assets\js\slider1.js"></script>
   <script src="assets\js\scroll.js"></script>
